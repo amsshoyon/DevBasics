@@ -1,12 +1,47 @@
 ## Js Topics
 ```python
-1. Hoisting
-2. var vs const vs let
-3. Callback vs Promise vs Rx.Observable
-4. IIFE
-5. Event Delegation
-5. Target vs Current target
+** Scopes
+** Closures
+** Recursion
+** Hoisting
+** var vs const vs let
+** Primitive & Reference Value
+** Callback vs Promise vs Rx.Observable
+** IIFE
+** Event Delegation
+** Target vs Current target
 
+```
+
+### Scopes
+Scope is all about the visibility of variables in your code - it controls which variable can be used where.
+
+JavaScript knows three types of scope:
+
+Global Scope: Variables defined outside of any function or other block statement like if
+Function Scope: Variables defined with var inside of a function
+Block Scope: Variables defined with let or const in any block (like if, for etc.)
+
+### Closures
+Everithing in outside scope has access into inside/child scope.
+
+### Recursion
+It’s just a function calling itself after all.
+```
+    // Beware: This causes an infinite loop!
+    function callOnMe() {
+    callOnMe();
+    }
+
+    callOnMe();
+
+    // Use case
+    function factorial(n) {
+    if (n === 0) return 1; // base case
+        return n * factorial(n - 1); // recursive step
+    }
+
+    factorial(3); // 6
 ```
 
 ### Hoisting
@@ -72,8 +107,24 @@ const cannot be updated or re-declared
     const greeting = "say Hello instead";// error: Identifier 'greeting' has already been declared
 
     // or 
-    
+
     const greeting = "say Hi";
     greeting = "say Hello instead";// error: Assignment to constant variable. 
 ```
 
+### Primitive & Reference Value
+#### Primitive values : Primitive values are immutable and shared by copy.
+```
+    * String
+    * Number
+    * Boolean
+    * undefined (and null)
+    * Symbol
+    * BigInt
+```
+
+#### Reference values: ARE mutable and are shared by reference.
+```
+    * Objects
+    * Array
+```
