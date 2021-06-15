@@ -10,6 +10,7 @@
 ** IIFE
 ** Event Delegation
 ** Target vs Current target
+** Call by Reference
 
 ```
 
@@ -130,4 +131,28 @@ const cannot be updated or re-declared
 ```
 
 ### Callback vs Promise vs Rx.Observable: 
-code inside "jsBasics"
+code inside "jsBasics.js"
+
+### Call by Reference
+#### For arrays
+```
+const a = [1,2,3,4];
+// const b = a.slice(); // general methode
+const b = [...a]; // spread operator (ES6)
+consloe.log(b); // logs 1,2,3,4
+console.log(a === b); // logs false 
+```
+(a === b) returns false as b copies the values from a, looks like a, but they have seperate reference and are not same
+
+#### For Objects
+```
+const person = {
+    firstName: 'John',
+    lastName: 'Doe'
+};
+let person2 = {...person}; // spread operator
+let person3 = Object.assign({}, person); // using  Object.assign() method
+let person4 = JSON.parse(JSON.stringify(person)); // using JSON
+
+```
+Both spread (...) and Object.assign() perform a shallow copy while the JSON methods carry a deep copy.
