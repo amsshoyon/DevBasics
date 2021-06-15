@@ -10,13 +10,11 @@
 ```
 
 ### Hoisting
-```
 Hoisting is JavaScript's default behavior of moving declarations to the top.
 
 js works on 2 phase, 1. Compile phase  , then 2. Execution
 
 JavaScript only hoists declarations, not initializations. If a variable is declared and initialized after using it, the value will be undefined.
-```
 
 Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. This means that if we do this:
 ```
