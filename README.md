@@ -128,3 +128,6 @@ const cannot be updated or re-declared
     * Objects
     * Array
 ```
+
+### Callback vs Promise vs Rx.Observable: 
+code inside "jsBasics"
