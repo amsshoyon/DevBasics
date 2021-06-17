@@ -1,6 +1,6 @@
 ## Js Topics
 
-|No| Topics
+|No| Topics |
 | --- | --------- |
 |1  | [Scopes](#scopes) |
 |2  | [Closures](#closures)|
@@ -14,7 +14,10 @@
 |10 | [Target vs Current target ](#target-vs-current-target)|
 |11 | [Call by Reference ](#call-by-reference)|
 
+#
+
 ### Scopes
+
 Scope is all about the visibility of variables in your code - it controls which variable can be used where.
 
 JavaScript knows three types of scope:
@@ -23,12 +26,15 @@ Global Scope: Variables defined outside of any function or other block statement
 Function Scope: Variables defined with var inside of a function
 Block Scope: Variables defined with let or const in any block (like if, for etc.)
  
- **[⬆ Back to Top](#js-topics)**
+ [⬆ Back to Top](#js-topics)
 
+---
 ### Closures
 Everithing in outside scope has access into inside/child scope.
 
-**[⬆ Back to Top](#js-topics)**
+[⬆ Back to Top](#js-topics)
+
+---
 
 ### Recursion
 It’s just a function calling itself after all.
@@ -49,7 +55,9 @@ It’s just a function calling itself after all.
     factorial(3); // 6
 ```
 
-**[⬆ Back to Top](#js-topics)**
+[⬆ Back to Top](#js-topics)
+
+---
 
 ### Hoisting
 Hoisting is JavaScript's default behavior of moving declarations to the top.
@@ -71,7 +79,9 @@ it is interpreted as this:
 ```
 So var variables are hoisted to the top of their scope and initialized with a value of undefined.
 
-**[⬆ Back to Top](#js-topics)**
+[⬆ Back to Top](#js-topics)
+
+---
 
 ### var vs const vs let
 #### var: var is function scoped.
@@ -121,7 +131,9 @@ const cannot be updated or re-declared
     greeting = "say Hello instead";// error: Assignment to constant variable. 
 ```
 
-**[⬆ Back to Top](#js-topics)**
+[⬆ Back to Top](#js-topics)
+
+---
 
 ### Primitive & Reference Value
 #### Primitive values : Primitive values are immutable and shared by copy.
@@ -140,14 +152,36 @@ const cannot be updated or re-declared
     * Array
 ```
 
-**[⬆ Back to Top](#js-topics)**
+[⬆ Back to Top](#js-topics)
 
+---
 
 ### Callback vs Promise vs Rx Observable vs Async Await
 code inside "jsBasics.js"
 
-**[⬆ Back to Top](#js-topics)**
+[⬆ Back to Top](#js-topics)
 
+---
+
+### IIFE
+---
+Immediately Invoked Function Expression
+
+[⬆ Back to Top](#js-topics)
+
+---
+
+### Event Delegation
+
+[⬆ Back to Top](#js-topics)
+
+---
+
+### Target vs Current target
+
+[⬆ Back to Top](#js-topics)
+
+---
 
 ### Call by Reference
 #### For arrays
@@ -172,3 +206,5 @@ let person4 = JSON.parse(JSON.stringify(person)); // using JSON
 
 ```
 Both spread (...) and Object.assign() perform a shallow copy while the JSON methods carry a deep copy.
+
+---
