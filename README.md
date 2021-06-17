@@ -1,18 +1,18 @@
 ## Js Topics
-```python
-** Scopes
-** Closures
-** Recursion
-** Hoisting
-** var vs const vs let
-** Primitive & Reference Value
-** Callback vs Promise vs Rx.Observable
-** IIFE
-** Event Delegation
-** Target vs Current target
-** Call by Reference
 
-```
+|No| Topics
+
+|1  | Scopes (#Scopes)|
+|2  | Closures (#Closures)|
+|3  | Recursion (#Recursion)|
+|4  | Hoisting (#Hoisting)|
+|5  | var vs const vs let (#var-vs-const-vs-let)|
+|6  | Primitive & Reference Value (#Primitive-&-Reference-Value)|
+|7  | Callback vs Promise vs Rx.Observable vs Async-Await (#Callback-vs-Promise-vs-Rx.Observable-vs-Async-Await)|
+|8  | IIFE (#IIFE)|
+|9  | Event Delegation (#Event-Delegation)|
+|10 | Target vs Current target (#Target-vs-Current-target)|
+|11 | Call by Reference (#Call-by-Reference)|
 
 ### Scopes
 Scope is all about the visibility of variables in your code - it controls which variable can be used where.
@@ -22,6 +22,8 @@ JavaScript knows three types of scope:
 Global Scope: Variables defined outside of any function or other block statement like if
 Function Scope: Variables defined with var inside of a function
 Block Scope: Variables defined with let or const in any block (like if, for etc.)
+ 
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### Closures
 Everithing in outside scope has access into inside/child scope.
@@ -130,7 +132,7 @@ const cannot be updated or re-declared
     * Array
 ```
 
-### Callback vs Promise vs Rx.Observable: 
+### Callback vs Promise vs Rx.Observable vs Async-Await
 code inside "jsBasics.js"
 
 ### Call by Reference

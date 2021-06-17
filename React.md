@@ -1,1 +1,6 @@
 ## React Basics
+
+```
+** Scopes
+
+```
