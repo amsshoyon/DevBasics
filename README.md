@@ -169,15 +169,15 @@ An Immediately-invoked Function Expression is a way to execute functions immedia
 This is the syntax that defines an IIFE:
 
 ```
-    (() => {
-        // code...
-    })()
+    ((foo) => {
+        console.log(foo) // logs ams
+    })("ams")
 
     // ---
 
     (function(value){
         var greet = 'Hello';
-        console.log(greet+ ' ' + value);
+        console.log(greet+ ' ' + value); // logs Hello iffe
     })('iffe');   
 ```
 
