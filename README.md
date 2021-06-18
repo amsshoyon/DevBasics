@@ -164,7 +164,8 @@ code inside "jsBasics.js"
 ---
 
 ### IIFE
-An Immediately-invoked Function Expression is a way to execute functions immediately, as soon as they are created. IIFEs are very useful because they don't pollute the global object, and they are a simple way to isolate variables declarations
+An Immediately-invoked Function Expression is a function defined as an expression and executed immediately after creation.
+IIFEs are very useful because they don't pollute the global object, and they are a simple way to isolate variables declarations
 
 This is the syntax that defines an IIFE:
 
