@@ -37,3 +37,12 @@ function commDiv(a, b) {
 let a = 40,
     b = 100;
 console.log(commDiv(a, b));
+
+// kid who get the last toy 
+const lastKidGetTheToy = (kids, toys) => {
+    if (kids === 1) return 1;
+    else if(toys % kids === 0) return kids;
+    else return toys % kids;
+}
+
+console.log(lastKidGetTheToy(1, 25))
