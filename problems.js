@@ -1,4 +1,6 @@
+// ---------------------------------------------
 // Print fizz buzz on condition
+// ---------------------------------------------
 const fizzBuzz = maxNumber => {
     for (let i = 0; i <= maxNumber; i++) {
         if (i !== 0 && i % 3 === 0 && i % 5 === 0) {
@@ -17,7 +19,9 @@ const commonDiviser = (num1, num2) => {};
 
 fizzBuzz(100);
 
+// ---------------------------------------------
 // Common Divisors of Two Numbers
+// ---------------------------------------------
 function gcd(a, b) {
     if (a === 0) return b;
     return gcd(b % a, a);
@@ -34,11 +38,12 @@ function commDiv(a, b) {
     return result;
 }
 
-let a = 40,
-    b = 100;
+let a = 40, b = 100;
 console.log(commDiv(a, b));
 
+// ---------------------------------------------
 // kid who get the last toy 
+// ---------------------------------------------
 const lastKidGetTheToy = (kids, toys) => {
     if (kids === 1) return 1;
     else if(toys % kids === 0) return kids;
@@ -46,3 +51,34 @@ const lastKidGetTheToy = (kids, toys) => {
 }
 
 console.log(lastKidGetTheToy(1, 25))
+
+// ---------------------------------------------
+// Array Destructuring
+// ---------------------------------------------
+function removeFirstTwo(list) {
+    const [, , ...arr] = list; 
+    return arr;
+  } 
+  var arrLiteral = [8,9,10,11,12]
+  console.log("arr contains: " + removeFirstTwo(arrLiteral))
+
+
+// ---------------------------------------------
+// Check Type
+// ---------------------------------------------
+function check(obj) {
+    if (Object.prototype.toString.call(obj) === "[object Array]") {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  console.log(check(123)); // [object Number]
+  console.log(check("cat")); // [object String]
+  console.log(check([1, 2, 3, 4])); // [object Array]
+  console.log(check({"a": 2, "b": 3})); // [object Object]
+
+  // Base 
+
+  new (function Custom(){}) // [object Object]
+  function Custom(){} // [object Function]

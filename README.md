@@ -1,20 +1,18 @@
-## Js Topics
-
-|No| Topics |
+## Js Topics ()
+Execution contest: Memory Allocation/Variable Environment > Code execution/Thread of Execution
+| Topics | |
 | --- | --------- |
-|1  | [Scopes](#scopes) |
-|2  | [Closures](#closures)|
-|3  | [Recursion](#recursion)|
-|4  | [Hoisting](#hoisting)|
-|5  | [var vs const vs let](#var-vs-const-vs-let)|
-|6  | [Primitive & Reference Value](#primitive-reference-value)|
-|7  | [Callback vs Promise vs Rx Observable vs Async Await](#callback-vs-promise-vs-rx-observable-vs-async-await)|
-|8  | [IIFE](#iife)|
-|9  | [Event Delegation](#event-delegation)|
-|10 | [Target vs Current target ](#target-vs-current-target)|
-|11 | [Call by Reference ](#call-by-reference)|
-
-#
+|* [Scopes](#scopes) |
+|* [Closures](#closures)|
+|* [Recursion](#recursion)|
+|* [Hoisting](#hoisting)|
+|* [var vs const vs let](#var-vs-const-vs-let)|
+|* [Primitive & Reference Value](#primitive-reference-value)|
+|* [Callback vs Promise vs Rx Observable vs Async Await](#calback-vs-promise-vs-rx-observable-vs-async-await)|
+|* [IIFE](#iife)|
+|* [Event Delegation](#event-delegation)|
+|* [Target vs Current target ](#target-vs-current-target)|
+|* [Call by Reference ](#call-by-reference)|
 
 ### Scopes
 
@@ -23,8 +21,13 @@ Scope is all about the visibility of variables in your code - it controls which 
 JavaScript knows three types of scope:
 
 Global Scope: Variables defined outside of any function or other block statement like if
+
 Function Scope: Variables defined with var inside of a function
 Block Scope: Variables defined with let or const in any block (like if, for etc.)
+
+| laxical environment | scope chain | 
+
+https://www.youtube.com/watch?v=uH-tVP8MUs8&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=8
  
  [⬆ Back to Top](#js-topics)
 
@@ -59,7 +62,9 @@ It’s just a function calling itself after all.
 
 ---
 
-### Hoisting
+### Hoisting 
+https://www.youtube.com/watch?v=Fnlnw8uY6jo&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=5
+
 Hoisting is JavaScript's default behavior of moving declarations to the top.
 
 js works on 2 phase, 1. Compile phase  , then 2. Execution
