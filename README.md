@@ -1,7 +1,7 @@
 ## Js Topics ()
 Execution contest: Memory Allocation/Variable Environment > Code execution/Thread of Execution
 | Topics | |
-| --- | --------- |
+| ----------------------- | --------- |
 |* [Scopes](#scopes) |
 |* [Closures](#closures)|
 |* [Recursion](#recursion)|
@@ -10,7 +10,7 @@ Execution contest: Memory Allocation/Variable Environment > Code execution/Threa
 |* [Primitive & Reference Value](#primitive-reference-value)|
 |* [Callback vs Promise vs Rx Observable vs Async Await](#calback-vs-promise-vs-rx-observable-vs-async-await)|
 |* [IIFE](#iife)|
-|* [Event Delegation](#event-delegation)|
+|* [Event Delegation](#event-delegation)| 
 |* [Target vs Current target ](#target-vs-current-target)|
 |* [Call by Reference ](#call-by-reference)|
 
@@ -25,9 +25,13 @@ Global Scope: Variables defined outside of any function or other block statement
 Function Scope: Variables defined with var inside of a function
 Block Scope: Variables defined with let or const in any block (like if, for etc.)
 
-| laxical environment | scope chain | 
+| laxical environment | scope chain |
 
 https://www.youtube.com/watch?v=uH-tVP8MUs8&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=8
+
+| Temporal Dead Zone |
+
+https://www.youtube.com/watch?v=BNC6slYCj50&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=9
  
  [⬆ Back to Top](#js-topics)
 
