@@ -110,3 +110,17 @@ function x() {
 }
 
 x();
+
+// using var is also possible by passing variable i 
+function x() {
+    for(var i = 1; i <= 5; i++) {
+        function close(i){ // new copy of i where its referrance in different
+            setTimeout(function() {
+                console.log(i);
+            }, i * 1000);
+        }
+        close(i);
+    }
+}
+
+x();
