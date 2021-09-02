@@ -39,6 +39,8 @@ https://www.youtube.com/watch?v=BNC6slYCj50&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccP
 ### Closures
 Everithing in outside scope has access into inside/child scope.
 
+https://www.youtube.com/watch?v=qikxEIxsXco&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=13
+
 [⬆ Back to Top](#js-topics)
 
 ---
