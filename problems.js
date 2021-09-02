@@ -82,3 +82,31 @@ function check(obj) {
 
   new (function Custom(){}) // [object Object]
   function Custom(){} // [object Function]
+
+
+  // ================================
+  // Interesting Fact about closure
+  // ================================
+  function x() {
+      for(var i = 1; i <= 5; i++) {
+          setTimeout(function() {
+              console.log(i);
+          }, i * 1000);
+      }
+  }
+
+  x();
+
+  // will console 6, 5 times, 1s interval. Why ???
+
+//   But changing var to let, it works
+
+function x() {
+    for(let i = 1; i <= 5; i++) {
+        setTimeout(function() {
+            console.log(i);
+        }, i * 1000);
+    }
+}
+
+x();
