@@ -2,6 +2,7 @@
 Execution contest: Memory Allocation/Variable Environment > Code execution/Thread of Execution
 | Topics |
 | ----------------------- |
+|* [How Browser Works](#how-browser-works) |
 |* [Scopes](#scopes) |
 |* [Closures](#closures)|
 |* [Recursion](#recursion)|
@@ -14,6 +15,10 @@ Execution contest: Memory Allocation/Variable Environment > Code execution/Threa
 |* [Target vs Current target ](#target-vs-current-target)|
 |* [Call by Reference ](#call-by-reference)|
 |* [Functions ](#functions)|
+
+### How Browser Works
+
+https://www.youtube.com/watch?v=8zKuNo4ay8E&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=17
 
 ### Scopes
 
@@ -175,6 +180,9 @@ const cannot be updated or re-declared
 ---
 
 ### Callback vs Promise vs Rx Observable vs Async Await
+
+**Callback**: A callback function is a function that is passed as an argument to another function, to be “called back” at a later time. A function that accepts other functions as arguments is called a higher-order function, which contains the logic for when the callback function gets executed. It’s the combination of these two that allow us to extend our functionality.
+
 code inside "jsBasics.js"
 
 [⬆ Back to Top](#js-topics)
