@@ -13,6 +13,7 @@ Execution contest: Memory Allocation/Variable Environment > Code execution/Threa
 |* [Event Delegation](#event-delegation)| 
 |* [Target vs Current target ](#target-vs-current-target)|
 |* [Call by Reference ](#call-by-reference)|
+|* [Functions ](#functions)|
 
 ### Scopes
 
@@ -238,5 +239,60 @@ let person4 = JSON.parse(JSON.stringify(person)); // using JSON
 
 ```
 Both spread (...) and Object.assign() perform a shallow copy while the JSON methods carry a deep copy.
+
+---
+
+#### Functions
+```
+// Function Statement
+function a() {
+    console.log("Function Statement");
+}
+
+// Function Expression
+var b = function () {
+    console.log("Function Expression");
+}
+
+// Difference betwn Function Statement & Function Expression
+Hoisting, calling function statement, a(), before initialize it won't give error,
+but calling function Expression, b(), before initializing will give an type error.
+
+// Function Declaration
+Same as Function Statement
+
+// Anonymous Function
+Function without any name or identity.
+they are used as value.
+
+function () {
+    console.log("hellow")
+}
+
+doing so will return error. it is used to form a Function Expression. like,
+var b = function () {
+    console.log("Function Expression");
+}
+
+// Named function expression
+A Function Expression, with a name.
+var c = function  b() {
+    console.log("Nemed Function");
+}
+can't call b() in global scope.
+
+// function parameter vs function arguments
+var b = function (param1, param2) { // params are local variable in function scope
+    console.log("parmas");
+}
+
+b(argument1, argument2);
+
+SO, things wi pass with a function is argument and things we call for a function is parameters.
+
+// First class function or first class citizens
+the abiluty to use functions as values, as argument, return a function from another function,..... this abilities are known as First class function
+
+// Arroe function
 
 ---
