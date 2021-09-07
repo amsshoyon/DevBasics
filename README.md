@@ -1,7 +1,7 @@
 ## Js Topics ()
 Execution contest: Memory Allocation/Variable Environment > Code execution/Thread of Execution
-| Topics | |
-| ----------------------- | --------- |
+| Topics |
+| ----------------------- |
 |* [Scopes](#scopes) |
 |* [Closures](#closures)|
 |* [Recursion](#recursion)|
